@@ -28,7 +28,7 @@ func GetWeather(lat float32, lon float32) (WeatherStatus string) {
 		W     Wind        `json:"wind"`
 	}
 
-	const WEATHER_API_KEY = "450ca32eb8bc302ca9e677386a9ceab9"
+	const WEATHER_API_KEY = "YOUR_API_KEY"
 	response, err := http.Get("https://api.openweathermap.org/data/2.5/weather?lat=" + fmt.Sprintf("%f", lat) + "&lon=" + fmt.Sprintf("%f", lon) + "&appid=" + WEATHER_API_KEY)
 	if err != nil {
 		panic(err.Error())
