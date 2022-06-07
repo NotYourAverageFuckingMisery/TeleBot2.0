@@ -10,6 +10,8 @@ import (
 	"Telebot2.0/modules"
 )
 
+// this uses telegram bot API they have an amasing documentation
+
 func GetUpdates(bot_url string, offset int) ([]modules.Update, error) {
 	resp, err := http.Get(bot_url + "/getUpdates" + "?offset=" + strconv.Itoa(offset))
 	if err != nil {

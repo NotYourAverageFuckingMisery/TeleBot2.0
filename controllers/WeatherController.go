@@ -7,6 +7,8 @@ import (
 	"net/http"
 )
 
+// this uses openweather API, it's fun, you should check it out
+
 func GetWeather(lat float32, lon float32) (WeatherStatus string) {
 
 	type Weather struct {

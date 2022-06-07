@@ -7,6 +7,8 @@ import (
 	"net/http"
 )
 
+//this uses positionstack api
+
 func GetGeocode(adress string) (latitude float32, longitude float32) {
 
 	type Coord struct {

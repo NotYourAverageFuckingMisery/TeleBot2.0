@@ -24,3 +24,5 @@ type BotMessage struct {
 	Text       string `json:"text"`
 	ReplyMsgId int    `json:"reply_to_message_id"`
 }
+
+// I love the room movie it's so bad and so good
